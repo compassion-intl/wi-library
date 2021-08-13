@@ -1,8 +1,25 @@
 .container,
+.container-xs,
 .container-sm,
+.container-sm-xs,
 .container-md,
+.container-md-sm,
+.container-md-xs,
 .container-lg,
-.container-xl {
+.container-lg-md,
+.contianer-lg-sm,
+.container-lg-xs,
+.container-xl,
+.container-xl-lg,
+.container-xl-md,
+.container-xl-sm,
+.container-xl-xs,
+.container-xxl,
+.container-xxl-xl,
+.container-xxl-lg,
+.container-xxl-md,
+.container-xxl-sm,
+.container-xxl-xs {
 	max-width: 100%;
 	padding-right: $grid-gutter;
 	padding-left: $grid-gutter;
@@ -12,9 +29,23 @@
 .container {
 	@each $key, $value in $grid-breakpoints {
 		@if $value != 0rem {
+			&-#{$key} {
+				width: $value;
+			}
+		}
+	}
+
+	@each $key, $value in $grid-breakpoints {
+		&-#{$key} {
 			@media (min-width: $value) {
-				&-#{$key} {
-					width: $value;
+				@each $key2, $value2 in $grid-breakpoints {
+					@if $value2 < $value {
+						@if $value2 != 0rem {
+							&-#{$key2} {
+								width: $value2;
+							}
+						}
+					}
 				}
 			}
 		}
