@@ -1,0 +1,47 @@
+.align-items {
+	@include styleAllBreakpoints() {
+		@each $option in $flex-alignment-options {
+			&-#{$option} {
+				align-items: $option;
+			}
+		}
+	}
+}
+
+.align-self {
+	@include styleAllBreakpoints() {
+		@each $option in $flex-alignment-options {
+			&-#{$option} {
+				align-self: $option;
+			}
+		}
+	}
+}
+
+.justify-content {
+	@include styleAllBreakpoints() {
+		@each $option in $flex-alignment-options {
+			&-#{$option} {
+				justify-content: $option;
+			}
+		}
+	}
+}
+
+.order {
+	@include styleAllBreakpoints() {
+		@include gridOrder();
+	}
+}
+
+.flex {
+	@include styleAllBreakpoints() {
+		&-nowrap {
+			flex-wrap: nowrap;
+		}
+
+		&-wrap {
+			flex-wrap: wrap;
+		}
+	}
+}
