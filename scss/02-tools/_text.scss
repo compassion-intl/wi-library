@@ -9,7 +9,7 @@
 @mixin textColors() {
 	@each $key, $value in $colors {
 		&-#{$key} {
-			color: $value;
+			color: $value !important;
 		}
 	}
 }

@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --recursive --watch ./scss/ --output css/",
-    "start": "npm-run-all -p scss"
+    "scssMain": "node-sass --recursive --watch ./scss/ --output css/ --output-style=expanded --quiet",
+    "scssMainMin": "node-sass --recursive --watch scss/main.scss css/main.min.css --output-style=compressed --quiet",
+    "start": "npm-run-all -p scssMain scssMainMin"
   },
   "repository": {
     "type": "git",
