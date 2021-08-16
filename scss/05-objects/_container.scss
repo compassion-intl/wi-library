@@ -2,24 +2,34 @@
 .container-xs,
 .container-sm,
 .container-sm-xs,
+.container-sm-md,
+.container-sm-lg,
+.container-sm-xl,
+.container-sm-xxl,
 .container-md,
-.container-md-sm,
 .container-md-xs,
+.container-md-sm,
+.container-md-lg,
+.container-md-xl,
+.container-md-xxl,
 .container-lg,
-.container-lg-md,
-.contianer-lg-sm,
 .container-lg-xs,
+.container-lg-sm,
+.container-lg-md,
+.container-lg-xl,
+.container-lg-xxl,
 .container-xl,
-.container-xl-lg,
-.container-xl-md,
-.container-xl-sm,
 .container-xl-xs,
+.container-xl-sm,
+.container-xl-md,
+.container-xl-lg,
+.container-xl-xxl,
 .container-xxl,
-.container-xxl-xl,
-.container-xxl-lg,
-.container-xxl-md,
+.container-xxl-xs,
 .container-xxl-sm,
-.container-xxl-xs {
+.container-xxl-md,
+.container-xxl-lg,
+.container-xxl-xl {
 	max-width: 100%;
 	padding-right: $grid-gutter;
 	padding-left: $grid-gutter;
@@ -39,11 +49,9 @@
 		&-#{$key} {
 			@media (min-width: $value) {
 				@each $key2, $value2 in $grid-breakpoints {
-					@if $value2 < $value {
-						@if $value2 != 0rem {
-							&-#{$key2} {
-								width: $value2;
-							}
+					@if $value2 != 0rem {
+						&-#{$key2} {
+							width: $value2;
 						}
 					}
 				}

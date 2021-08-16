@@ -69,24 +69,34 @@ img {
 .container-xs,
 .container-sm,
 .container-sm-xs,
+.container-sm-md,
+.container-sm-lg,
+.container-sm-xl,
+.container-sm-xxl,
 .container-md,
-.container-md-sm,
 .container-md-xs,
+.container-md-sm,
+.container-md-lg,
+.container-md-xl,
+.container-md-xxl,
 .container-lg,
-.container-lg-md,
-.contianer-lg-sm,
 .container-lg-xs,
+.container-lg-sm,
+.container-lg-md,
+.container-lg-xl,
+.container-lg-xxl,
 .container-xl,
-.container-xl-lg,
-.container-xl-md,
-.container-xl-sm,
 .container-xl-xs,
+.container-xl-sm,
+.container-xl-md,
+.container-xl-lg,
+.container-xl-xxl,
 .container-xxl,
-.container-xxl-xl,
-.container-xxl-lg,
-.container-xxl-md,
+.container-xxl-xs,
 .container-xxl-sm,
-.container-xxl-xs {
+.container-xxl-md,
+.container-xxl-lg,
+.container-xxl-xl {
   max-width: 100%;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -117,9 +127,66 @@ img {
   width: 100rem;
 }
 
+@media (min-width: 0rem) {
+  .container-xxs-xs {
+    width: 22.5rem;
+  }
+  .container-xxs-sm {
+    width: 32.5rem;
+  }
+  .container-xxs-md {
+    width: 45rem;
+  }
+  .container-xxs-lg {
+    width: 62.5rem;
+  }
+  .container-xxs-xl {
+    width: 80rem;
+  }
+  .container-xxs-xxl {
+    width: 100rem;
+  }
+}
+
+@media (min-width: 22.5rem) {
+  .container-xs-xs {
+    width: 22.5rem;
+  }
+  .container-xs-sm {
+    width: 32.5rem;
+  }
+  .container-xs-md {
+    width: 45rem;
+  }
+  .container-xs-lg {
+    width: 62.5rem;
+  }
+  .container-xs-xl {
+    width: 80rem;
+  }
+  .container-xs-xxl {
+    width: 100rem;
+  }
+}
+
 @media (min-width: 32.5rem) {
   .container-sm-xs {
     width: 22.5rem;
+  }
+  .container-sm-sm {
+    width: 32.5rem;
+  }
+  .container-sm-md {
+    width: 45rem;
+  }
+  .container-sm-lg {
+    width: 62.5rem;
+  }
+  .container-sm-xl {
+    width: 80rem;
+  }
+  .container-sm-xxl {
+    width: 100rem;
   }
 }
 
@@ -129,6 +196,18 @@ img {
   }
   .container-md-sm {
     width: 32.5rem;
+  }
+  .container-md-md {
+    width: 45rem;
+  }
+  .container-md-lg {
+    width: 62.5rem;
+  }
+  .container-md-xl {
+    width: 80rem;
+  }
+  .container-md-xxl {
+    width: 100rem;
   }
 }
 
@@ -141,6 +220,15 @@ img {
   }
   .container-lg-md {
     width: 45rem;
+  }
+  .container-lg-lg {
+    width: 62.5rem;
+  }
+  .container-lg-xl {
+    width: 80rem;
+  }
+  .container-lg-xxl {
+    width: 100rem;
   }
 }
 
@@ -156,6 +244,12 @@ img {
   }
   .container-xl-lg {
     width: 62.5rem;
+  }
+  .container-xl-xl {
+    width: 80rem;
+  }
+  .container-xl-xxl {
+    width: 100rem;
   }
 }
 
@@ -174,6 +268,9 @@ img {
   }
   .container-xxl-xl {
     width: 80rem;
+  }
+  .container-xxl-xxl {
+    width: 100rem;
   }
 }
 
@@ -671,6 +768,7 @@ img {
  * 06-COMPONENTS
  * Content Card ---------- Card/link for content
  * Fade in Content ------- Animation class to fade in content
+ * Feature --------------- Feature/hero component
  * Sticky ---------------- Sticky element at bottom of page
  */
 .content-card {
@@ -716,6 +814,37 @@ img {
   100% {
     opacity: 1;
   }
+}
+
+.feature {
+  position: relative;
+}
+
+.feature__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.feature__background-image {
+  width: 100%;
+}
+
+@supports (object-fit: cover) {
+  .feature__background-image {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.feature__content {
+  position: relative;
+  z-index: 1;
 }
 
 .sticky {

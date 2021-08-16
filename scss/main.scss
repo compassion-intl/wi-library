@@ -58,10 +58,12 @@
  * 06-COMPONENTS
  * Content Card ---------- Card/link for content
  * Fade in Content ------- Animation class to fade in content
+ * Feature --------------- Feature/hero component
  * Sticky ---------------- Sticky element at bottom of page
  */
 @import './06-components/content-card';
 @import './06-components/fade-in-content';
+@import './06-components/feature';
 @import './06-components/sticky';
 
 /**
