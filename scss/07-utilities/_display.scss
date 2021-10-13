@@ -2,7 +2,7 @@
 	@include styleAllBreakpoints() {
 		@each $option in $display-values {
 			&-#{$option} {
-				display: $option;
+				display: $option !important;
 			}
 		}
 	}

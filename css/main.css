@@ -1171,174 +1171,174 @@ img {
 }
 
 .d-block {
-  display: block;
+  display: block !important;
 }
 
 .d-flex {
-  display: flex;
+  display: flex !important;
 }
 
 .d-grid {
-  display: grid;
+  display: grid !important;
 }
 
 .d-inline {
-  display: inline;
+  display: inline !important;
 }
 
 .d-inline-block {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .d-inline-flex {
-  display: inline-flex;
+  display: inline-flex !important;
 }
 
 .d-none {
-  display: none;
+  display: none !important;
 }
 
 @media (min-width: 22.5rem) {
   .d-xs-block {
-    display: block;
+    display: block !important;
   }
   .d-xs-flex {
-    display: flex;
+    display: flex !important;
   }
   .d-xs-grid {
-    display: grid;
+    display: grid !important;
   }
   .d-xs-inline {
-    display: inline;
+    display: inline !important;
   }
   .d-xs-inline-block {
-    display: inline-block;
+    display: inline-block !important;
   }
   .d-xs-inline-flex {
-    display: inline-flex;
+    display: inline-flex !important;
   }
   .d-xs-none {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (min-width: 32.5rem) {
   .d-sm-block {
-    display: block;
+    display: block !important;
   }
   .d-sm-flex {
-    display: flex;
+    display: flex !important;
   }
   .d-sm-grid {
-    display: grid;
+    display: grid !important;
   }
   .d-sm-inline {
-    display: inline;
+    display: inline !important;
   }
   .d-sm-inline-block {
-    display: inline-block;
+    display: inline-block !important;
   }
   .d-sm-inline-flex {
-    display: inline-flex;
+    display: inline-flex !important;
   }
   .d-sm-none {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (min-width: 45rem) {
   .d-md-block {
-    display: block;
+    display: block !important;
   }
   .d-md-flex {
-    display: flex;
+    display: flex !important;
   }
   .d-md-grid {
-    display: grid;
+    display: grid !important;
   }
   .d-md-inline {
-    display: inline;
+    display: inline !important;
   }
   .d-md-inline-block {
-    display: inline-block;
+    display: inline-block !important;
   }
   .d-md-inline-flex {
-    display: inline-flex;
+    display: inline-flex !important;
   }
   .d-md-none {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (min-width: 62.5rem) {
   .d-lg-block {
-    display: block;
+    display: block !important;
   }
   .d-lg-flex {
-    display: flex;
+    display: flex !important;
   }
   .d-lg-grid {
-    display: grid;
+    display: grid !important;
   }
   .d-lg-inline {
-    display: inline;
+    display: inline !important;
   }
   .d-lg-inline-block {
-    display: inline-block;
+    display: inline-block !important;
   }
   .d-lg-inline-flex {
-    display: inline-flex;
+    display: inline-flex !important;
   }
   .d-lg-none {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (min-width: 80rem) {
   .d-xl-block {
-    display: block;
+    display: block !important;
   }
   .d-xl-flex {
-    display: flex;
+    display: flex !important;
   }
   .d-xl-grid {
-    display: grid;
+    display: grid !important;
   }
   .d-xl-inline {
-    display: inline;
+    display: inline !important;
   }
   .d-xl-inline-block {
-    display: inline-block;
+    display: inline-block !important;
   }
   .d-xl-inline-flex {
-    display: inline-flex;
+    display: inline-flex !important;
   }
   .d-xl-none {
-    display: none;
+    display: none !important;
   }
 }
 
 @media (min-width: 100rem) {
   .d-xxl-block {
-    display: block;
+    display: block !important;
   }
   .d-xxl-flex {
-    display: flex;
+    display: flex !important;
   }
   .d-xxl-grid {
-    display: grid;
+    display: grid !important;
   }
   .d-xxl-inline {
-    display: inline;
+    display: inline !important;
   }
   .d-xxl-inline-block {
-    display: inline-block;
+    display: inline-block !important;
   }
   .d-xxl-inline-flex {
-    display: inline-flex;
+    display: inline-flex !important;
   }
   .d-xxl-none {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -1876,9 +1876,16 @@ img {
   overflow: auto;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 @media (min-width: 22.5rem) {
   .overflow-xs-auto {
     overflow: auto;
+  }
+  .overflow-xs-hidden {
+    overflow: hidden;
   }
 }
 
@@ -1886,11 +1893,17 @@ img {
   .overflow-sm-auto {
     overflow: auto;
   }
+  .overflow-sm-hidden {
+    overflow: hidden;
+  }
 }
 
 @media (min-width: 45rem) {
   .overflow-md-auto {
     overflow: auto;
+  }
+  .overflow-md-hidden {
+    overflow: hidden;
   }
 }
 
@@ -1898,17 +1911,26 @@ img {
   .overflow-lg-auto {
     overflow: auto;
   }
+  .overflow-lg-hidden {
+    overflow: hidden;
+  }
 }
 
 @media (min-width: 80rem) {
   .overflow-xl-auto {
     overflow: auto;
   }
+  .overflow-xl-hidden {
+    overflow: hidden;
+  }
 }
 
 @media (min-width: 100rem) {
   .overflow-xxl-auto {
     overflow: auto;
+  }
+  .overflow-xxl-hidden {
+    overflow: hidden;
   }
 }
 
