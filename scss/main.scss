@@ -68,18 +68,22 @@
 
 /**
  * 07-UTILITIES
+ * Box Shadow ------------ Box shadow stylings
  * BG -------------------- Background stylings
  * Display --------------- Display options
  * Flex ------------------ Flex options
  * Overflow -------------- Overflow options
+ * Rounded --------------- Border radius stylings
  * Scroll ---------------- Scroll options
  * Spacing --------------- Margin and padding stylings
  * Text ------------------ Text stylings
  */
+@import './07-utilities/box-shadow';
 @import './07-utilities/bg';
 @import './07-utilities/display';
 @import './07-utilities/flex';
 @import './07-utilities/overflow';
+@import './07-utilities/rounded';
 @import './07-utilities/scroll';
 @import './07-utilities/spacing';
 @import './07-utilities/text';
