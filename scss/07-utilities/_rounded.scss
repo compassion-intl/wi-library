@@ -1,0 +1,21 @@
+@import './../02-tools/grid';
+
+.rounded {
+	@include styleAllBreakpoints() {
+		&-none {
+			border-radius: 0;
+		}
+
+		&-1 {
+			border-radius: .25rem;
+		}
+
+		&-2 {
+			border-radius: .5rem;
+		}
+
+		&-3 {
+			border-radius: 1rem;
+		}
+	}
+}

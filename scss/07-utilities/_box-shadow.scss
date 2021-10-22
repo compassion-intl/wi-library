@@ -1,0 +1,21 @@
+@import './../02-tools/grid';
+
+.box-shadow {
+	@include styleAllBreakpoints() {
+		&-none {
+			box-shadow: none;
+		}
+
+		&-1 {
+			box-shadow: 0 3px 6px rgba(0,0,0,.15);
+		}
+
+		&-2 {
+			box-shadow: 0 3px 12px rgba(0,0,0,.15);
+		}
+
+		&-3 {
+			box-shadow: 0 3px 25px rgba(0,0,0,.15);
+		}
+	}
+}
