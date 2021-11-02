@@ -43,7 +43,7 @@
 	@each $key, $value in $grid-breakpoints {
 		@if $value != 0rem {
 			&-#{$key} {
-				width: $value;
+				width: $value + ($grid-gutter * 2);
 			}
 		}
 	}
@@ -54,7 +54,7 @@
 				@each $key2, $value2 in $grid-breakpoints {
 					@if $value2 != 0rem {
 						&-#{$key2} {
-							width: $value2;
+							width: $value2  + 2rem;
 						}
 					}
 				}
