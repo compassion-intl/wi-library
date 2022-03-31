@@ -12,6 +12,12 @@ $text-decorations: (
 	underline
 );
 
+$text-line-heights: (
+	1: 1em,
+	2: 1.3em,
+	3: 1.8em,
+);
+
 $text-transforms: (
 	capitalize,
 	none,

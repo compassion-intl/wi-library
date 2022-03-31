@@ -22,6 +22,14 @@
 	}
 }
 
+@mixin textLineHeights() {
+	@each $key, $value in $text-line-heights {
+		&-line-height-#{$key} {
+			line-height: $value;
+		}
+	}
+}
+
 @mixin textSizes() {
 	@each $key, $value in $text-units {
 		&-#{$key} {
