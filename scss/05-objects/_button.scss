@@ -1,3 +1,5 @@
+@import './../02-tools/grid';
+
 .button {
 	display: inline-block;
 	padding: 1rem 1.5rem;
@@ -14,5 +16,13 @@
 
 	&:hover {
 		background: $blue900;
+	}
+}
+
+.o-button {
+	@include styleAllBreakpoints() {
+		&--lg {
+			font-size: 1.25rem !important;
+		}
 	}
 }
