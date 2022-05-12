@@ -68,6 +68,7 @@
 
 /**
  * 07-UTILITIES
+ * Aspect ---------------- Aspect ratio stylings
  * Box Shadow ------------ Box shadow stylings
  * BG -------------------- Background stylings
  * Display --------------- Display options
@@ -78,6 +79,7 @@
  * Spacing --------------- Margin and padding stylings
  * Text ------------------ Text stylings
  */
+@import './07-utilities/aspect';
 @import './07-utilities/box-shadow';
 @import './07-utilities/bg';
 @import './07-utilities/display';

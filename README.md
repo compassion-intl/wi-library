@@ -30,6 +30,12 @@ This CSS library is meant to be used in conjunction with [Compassion.com's Site 
     - [Margin](#margin)
     - [Padding](#padding)
   - [Text](#text)
+    - [Text Alignment](#text-alignment)
+    - [Text Color](#text-color)
+    - [Text Decoration](#text-decoration)
+    - [Text Line Heights](#text-line-heights)
+    - [Font Sizes](#font-sizes)
+    - [Font Weights](#font-weights)
 
 ## Settings
 
@@ -410,6 +416,14 @@ You can also set margin to negative by adding an `n` modifier to the spacing uni
 | text-left   | text aligned left   |
 | text-center | text aligned center |
 | text-right  | text aligned right  |
+
+#### Text Color
+
+See [color variables](#colors) above for a complete list of colors.
+
+```html
+<div class="text-blue">Blue text goes here.</div>
+```
 
 #### Text Decoration
 
