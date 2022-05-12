@@ -14,6 +14,7 @@ This CSS library is meant to be used in conjunction with [Compassion.com's Site 
 - [Components](#components)
 	- [Feature](#feature)
 - [Utilities](#utilities)
+  - [Aspect Ratio](#aspect-ratio)
 	- [Background Colors](#background-colors)
   - [Box Shadow](#box-shadow)
   - [Display](#display)
@@ -187,6 +188,28 @@ The feature is used in the hero spot of the page or in an area that you want to 
 ---
 
 ## Utilities
+
+### Aspect Ratios
+
+If you need an element to fit a certain aspect ratio, this is the utility for you. The class is formatted as such: `aspect-{ratio}`.
+
+| Name       | Ratio                                 |
+|------------|---------------------------------------|
+| sqaure     | 1:1                                   |
+| standard   | 4:3                                   |
+| wide       | 16:9                                  |
+| letterbox  | 2.35:1                                |
+| responsive | Conforms to size of parent container. |
+
+```html
+<div class="aspect-square">
+  <img src="{src}" alt="A sqaure image" />
+</div>
+
+<div class="aspect-wide aspect-md-responsive">
+  <img src="{src}" alt="An image that is responsive above the md breakpoint and 16:9 below it." >
+</div>
+```
 
 ### Background Colors
 

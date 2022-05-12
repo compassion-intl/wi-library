@@ -2,9 +2,11 @@
 
 .aspect {
 	@include styleAllBreakpoints() {
-		&-wide,
+		&-letterbox,
 		&-square,
-		&-responsive {
+		&-standard,
+		&-responsive,
+		&-wide {
 			width: 100%;
 			position: relative;
 			overflow: hidden;
@@ -20,22 +22,32 @@
 			}
 		}
 
-		&-wide,
-		&-square {
+		&-responsive {
+			height: 100%;
+			padding-top: 0;
+		}
+
+		&-letterbox,
+		&-square,
+		&-standard,
+		&-wide {
 			height: 0;
 		}
 
-		&-wide {
-			padding-top: 62.5%;
+		&-letterbox {
+			padding-top: 42.5%;
+		}
+
+		&-standard {
+			padding-top: 66.666%;
 		}
 
 		&-square {
 			padding-top: 100%;
 		}
 
-		&-responsive {
-			height: 100%;
-			padding-top: 0%;
+		&-wide {
+			padding-top: 62.5%;
 		}
 	}
 }
