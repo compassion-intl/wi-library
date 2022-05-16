@@ -30,6 +30,7 @@ This CSS library is meant to be used in conjunction with [Compassion.com's Site 
     - [Spacing Units](#spacing-units)
     - [Margin](#margin)
     - [Padding](#padding)
+    - [Gutter](#gutter)
   - [Text](#text)
     - [Text Alignment](#text-alignment)
     - [Text Color](#text-color)
@@ -429,6 +430,17 @@ You can also set margin to negative by adding an `n` modifier to the spacing uni
   <!-- PADDING RIGHT AND LEFT SET TO NEGATIVE SPACING UNIT 2 -->
 </div>
 ```
+
+#### Gutter
+
+Gutter is the space between columns and the row.
+
+| name | description                                                               |
+|------|---------------------------------------------------------------------------|
+| 1    | row margin left and right of -0.5rem, column padding left/right of 0.5rem |
+| 2    | row margin left and right of -1rem, column padding left/right of 1rem     |
+| 3    | row margin left and right of -1.5rem, column padding left/right of 1.5rem |
+| 4    | row margin left and right of -2rem, column padding left/right of 2rem     |
 
 ### Text
 
