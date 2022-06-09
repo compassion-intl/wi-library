@@ -5,6 +5,7 @@
 		&-letterbox,
 		&-square,
 		&-standard,
+		&-super-letterbox,
 		&-responsive,
 		&-wide {
 			width: 100%;
@@ -31,6 +32,7 @@
 		&-letterbox,
 		&-square,
 		&-standard,
+		&-super-letterbox,
 		&-wide {
 			height: 0;
 		}
@@ -39,12 +41,16 @@
 			padding-top: 42.5%;
 		}
 
+		&-square {
+			padding-top: 100%;
+		}
+
 		&-standard {
 			padding-top: 66.666%;
 		}
 
-		&-square {
-			padding-top: 100%;
+		&-super-letterbox {
+			padding-top: 20%;
 		}
 
 		&-wide {
