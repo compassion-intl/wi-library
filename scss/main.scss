@@ -52,7 +52,6 @@
 @import './05-objects/container';
 @import './05-objects/row';
 @import './05-objects/col';
-@import './05-objects/button';
 
 /**
  * 06-COMPONENTS
@@ -73,6 +72,7 @@
  * BG -------------------- Background stylings
  * Display --------------- Display options
  * Flex ------------------ Flex options
+ * Line Heights ---------- Text line height options
  * Overflow -------------- Overflow options
  * Rounded --------------- Border radius stylings
  * Scroll ---------------- Scroll options
@@ -84,6 +84,7 @@
 @import './07-utilities/bg';
 @import './07-utilities/display';
 @import './07-utilities/flex';
+@import './07-utilities/line-height';
 @import './07-utilities/overflow';
 @import './07-utilities/rounded';
 @import './07-utilities/scroll';

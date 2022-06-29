@@ -1,0 +1,12 @@
+@import './../01-settings/text';
+@import './../01-settings/grid';
+
+.line-height {
+	@include styleAllBreakpoints() {
+		@each $key, $value in $line-heights {
+			&-#{$key} {
+				line-height: $value;
+			}
+		}
+	}
+}
