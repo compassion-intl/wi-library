@@ -501,4 +501,7 @@ See [color variables](#colors) above for a complete list of colors.
 |----------------|------------------|
 | text-lighter   | font-weight: 400 |
 | text-normal    | font-weight: 500 |
-| text-bold      | font-weight:700  |
+| text-bold      | font-weight: 700 |
+| text-400       | font-weight: 400 |
+| text-500       | font-weight: 500 |
+| text-700       | font-weight: 700 |
