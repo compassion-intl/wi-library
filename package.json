@@ -1,6 +1,6 @@
 {
   "name": "wi-library",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "",
   "main": "react-librbary/dist/index.js",
   "module": "react-librbary/dist/index.js",

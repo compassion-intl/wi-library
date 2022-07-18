@@ -70,24 +70,26 @@ The above markup would show white text for devices under the `md` breakpoint wid
 
 Below is a list of commonly used colors in the library that are used to transform backgrounds, typography and other color-related attributes.
 
-|                                                                  | name     | hex       |
-|------------------------------------------------------------------|----------|-----------|
-| ![#000](https://via.placeholder.com/15/000/000000?text=+)        | black    | `#000000` |
-| ![#005eb8](https://via.placeholder.com/15/005eb8/000000?text=+)  | blue     | `#005eb8` |
-| ![#F1F9FF](https://via.placeholder.com/15/F1F9FF/000000?text=+)  | blue100  | `#F1F9FF` |
-| ![#D1E4F2](https://via.placeholder.com/15/D1E4F2/000000?text=+)  | blue200  | `#D1E4F2` |
-| ![#4BA3E4](https://via.placeholder.com/15/4BA3E4/000000?text=+)  | blue500  | `#4BA3E4` |
-| ![#00386d](https://via.placeholder.com/15/00386d/000000?text=+)  | blue900  | `#00386d` |
-| ![#425563](https://via.placeholder.com/15/425563/000000?text=+)  | gray     | `#425563` |
-| ![#f9f9f9](https://via.placeholder.com/15/f9f9f9/000000?text=+)  | gray100  | `#f9f9f9` |
-| ![#CCCCCC](https://via.placeholder.com/15/cccccc/000000?text=+)  | gray200  | `#CCCCCC` |
-| ![#D8D8D8](https://via.placeholder.com/15/D8D8D8/000000?text=+)  | gray300  | `#D8D8D8` |
-| ![#798894](https://via.placeholder.com/15/798894/000000?text=+)  | gray500  | `#798894` |
-| ![#425563](https://via.placeholder.com/15/425563/000000?text=+)  | gray700  | `#425563` |
-| ![#C13E2D](https://via.placeholder.com/15/C13E2D/000000?text=+)  | red      | `#C13E2D` |
-| ![#0086BF](https://via.placeholder.com/15/0086BF/000000?text=+)  | teal     | `#0086BF` |
-| ![#FFFFFF](https://via.placeholder.com/15/FFFFFF/000000?text=+)  | white    | `#FFFFFF` |
-| ![#ffd100s](https://via.placeholder.com/15/ffd100/000000?text=+) | yellow   | `#ffd100` |
+|                                                                  | name      | hex       |
+|------------------------------------------------------------------|-----------|-----------|
+| ![#000](https://via.placeholder.com/15/000/000000?text=+)        | black     | `#000000` |
+| ![#005eb8](https://via.placeholder.com/15/005eb8/000000?text=+)  | blue      | `#005eb8` |
+| ![#F1F9FF](https://via.placeholder.com/15/F1F9FF/000000?text=+)  | blue100   | `#F1F9FF` |
+| ![#D1E4F2](https://via.placeholder.com/15/D1E4F2/000000?text=+)  | blue200   | `#D1E4F2` |
+| ![#4BA3E4](https://via.placeholder.com/15/4BA3E4/000000?text=+)  | blue500   | `#4BA3E4` |
+| ![#00386d](https://via.placeholder.com/15/00386d/000000?text=+)  | blue900   | `#00386d` |
+| ![#20556B](https://via.placeholder.com/15/20556B/000000?text=+)  | dark-teal | `#20556B` |
+| ![#FFB500](https://via.placeholder.com/15/FFB500/000000?text=+)  | gold      | `#FFB500` |
+| ![#425563](https://via.placeholder.com/15/425563/000000?text=+)  | gray      | `#425563` |
+| ![#f9f9f9](https://via.placeholder.com/15/f9f9f9/000000?text=+)  | gray100   | `#f9f9f9` |
+| ![#CCCCCC](https://via.placeholder.com/15/cccccc/000000?text=+)  | gray200   | `#CCCCCC` |
+| ![#D8D8D8](https://via.placeholder.com/15/D8D8D8/000000?text=+)  | gray300   | `#D8D8D8` |
+| ![#798894](https://via.placeholder.com/15/798894/000000?text=+)  | gray500   | `#798894` |
+| ![#425563](https://via.placeholder.com/15/425563/000000?text=+)  | gray700   | `#425563` |
+| ![#C13E2D](https://via.placeholder.com/15/C13E2D/000000?text=+)  | red       | `#C13E2D` |
+| ![#0086BF](https://via.placeholder.com/15/0086BF/000000?text=+)  | teal      | `#0086BF` |
+| ![#FFFFFF](https://via.placeholder.com/15/FFFFFF/000000?text=+)  | white     | `#FFFFFF` |
+| ![#ffd100s](https://via.placeholder.com/15/ffd100/000000?text=+) | yellow    | `#ffd100` |
 
 
 ---
@@ -220,7 +222,9 @@ You can apply a background color to an element by giving it a class of `bg-{colo
 <div class="bg-gray"><!--CONTENT HERE --></div>
 ```
 
-The above markup would produce a `<div>` with a gray background. (<a href="#colors">See colors</a>) 
+The above markup would produce a `<div>` with a gray background. (<a href="#colors">See colors</a>)
+
+You may also set a background color to transparent by using the class name `bg-transparent`.
 
 This can be modified by adding the breakpoint modifier to the class name. `bg-md-gray` would give a gray background to the element only at or above the `md` breakpoint. (<a href="#breakpoints">See breakpoints</a>)
 
