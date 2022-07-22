@@ -1,3 +1,6 @@
+@import './../01-settings/display';
+@import './../02-tools/grid';
+
 .d {
 	@include styleAllBreakpoints() {
 		@each $option in $display-values {

@@ -1,3 +1,6 @@
+@import './../01-settings/flex-alignment';
+@import './../02-tools/grid';
+
 .align-items {
 	@include styleAllBreakpoints() {
 		@each $option in $flex-alignment-options {

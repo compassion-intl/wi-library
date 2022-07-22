@@ -2,6 +2,8 @@
 
 This CSS library is meant to be used in conjunction with [Compassion.com's Site MVP CSS](https://www.compassion.com/css/site-mvp.css) 
 
+**NOTE:** As of update 1.2.0, elements and object component stylings have been removed. Going forward, this library will be only used for grid and utilities.
+
 ## Table of Contents
 
 - [Settings](#settings)
@@ -11,8 +13,6 @@ This CSS library is meant to be used in conjunction with [Compassion.com's Site 
 	- [Container](#container)
 	- [Row](#row)
 	- [Column](#column)
-- [Components](#components)
-	- [Feature](#feature)
 - [Utilities](#utilities)
   - [Aspect Ratios](#aspect-ratios)
   - [Background Colors](#background-colors)
@@ -156,35 +156,6 @@ The column can be adjusted based on particualr breakpoints. (<a href="#breakpoin
 	<div class="col-12 col-md-8">
 		...
 	</div>
-</div>
-```
-
-## Components
-
-### Feature
-
-The feature is used in the hero spot of the page or in an area that you want to draw attention.
-
-```html
-<div class="feature bg-gray text-white">
-  <div class="feature__background">
-    <!-- DESKTOP IMAGE -->
-    <img class="feature__background-image d-none d-lg-block" src="{{imagePath}}" />
-    <!-- TABLET IMAGE -->
-    <img class="feature__background-image d-none d-md-block d-lg-none" src="{{imagePath}}" />
-    <!-- MOBILE IMAGE -->
-    <img class="feature__background-image d-md-none" src="{{imagePath}}" />
-  </div>
-  <div class="feature__content">
-    <!-- CONTENT GOES HERE -->
-    <div class="container-xl p-y-5 p-md-y-8">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <h1>This is a feature section</h1>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
 ```
 

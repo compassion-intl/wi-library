@@ -1,3 +1,6 @@
+@import './../02-tools/spacing';
+@import './../02-tools/text';
+
 .text {
 	@include styleAllBreakpoints() {
 		@include textAlignments();
